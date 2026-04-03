@@ -1,0 +1,206 @@
+/* Variables y Configuración Base */
+:root {
+    --primary-red: #e63946;
+    --daniel-a: #e4efe1;
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: "Caveat Brush", cursive;
+    background-color: var(--daniel-a);
+    margin: 0;
+    font-size: 1rem;
+    /* 16px dijo profe */
+}
+
+h1,
+h2,
+h {
+    font-family: "Birthstone", cursive;
+}
+
+h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navegación */
+.custom-nav {
+    background: rgba(204, 160, 160, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1.2rem;
+}
+
+/*Cabezera del nav */
+
+.logo {
+    font-weight: 600;
+    color: var(--primary-red) !important;
+    letter-spacing: 20px;
+}
+
+/*  Animacion  en Nav-Links (Cambio suave de color) */
+.nav-link {
+    color: var(--dark-bg);
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+/* Animación cards levantar y sombrear */
+.food-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    border: none;
+    height: 100%;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*  Animacion de imagen (Zoom suavecito) */
+.card-img-wrapper {
+    overflow: hidden;
+}
+
+.food-card img {
+    transition: var(--transition-smooth);
+}
+
+.food-card:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* 5. Animación de Botón (Pulso de color y expansión) */
+.btn-order {
+    background: var(--primary-red);
+    color: rgb(9, 7, 7);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    transition: var(--transition-smooth);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-order:hover {
+    background: var(--primary-red);
+    letter-spacing: 1px;
+}
+
+.activecarrusel {
+    background-color: black;
+}
+
+/* Estilos para que el carrusel se vea perfecto */
+.carousel-img-container {
+    height: 300px;
+    /* Altura en móviles */
+    overflow: hidden;
+}
+
+.carousel-img-container img {
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta la imagen al contenedor sin estirarla */
+    object-position: center;
+}
+
+/* Ajuste para pantallas medianas y grandes (PC) */
+@media (min-width: 48rem) {
+    .carousel-img-container {
+        height: 500px;
+        /* Altura más elegante en PC */
+    }
+}
+
+/*  responive diseño */
+
+/* estilos para mobile*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: "Caveat Brush", cursive;
+    background-color: #fff;
+    padding: 40px;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    border-bottom: 2px solid #ccc;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+
+
+
+/*Aquie separo el css de laotra pagina*/
+
+
+
+
+@media (min-width: 48rem) {
+
+    /* 768px */
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+}
+
+/* Pantallas Grandes (LG) */
+@media (min-width: 62rem) {
+
+    /* 992px */
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+
+
+/*Confio en el proceso, por favor cdigame cualn e mi error par apoder corregir por que no reecuerpo */
